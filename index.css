@@ -75,10 +75,18 @@ header {
 	overflow: hidden;
 }
 
+.skull {
+	text-align: center;
+}
+
 h2 {
 	font-size: 40px;
 	text-align: center;
 	color: black;
+}
+
+h3 {
+	text-align: center;
 }
 
 .text1 {
@@ -87,6 +95,19 @@ h2 {
 	font-size: 20px;
 	color: #4d4d4d;
 	line-height: 1.7;
+}
+
+.text2 {
+	text-align: left;
+	margin: 10% 20% 0% 20%; 
+	font-size: 20px;
+	color: #4d4d4d;
+	line-height: 1.7;
+}
+
+.text {
+	text-indent: 25px;
+	text-align: justify;
 }
 
 .footer {
