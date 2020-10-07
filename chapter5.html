@@ -4,15 +4,18 @@
 		<meta charset="utf-8">
 		<link href='favicon.ico' rel="shortcut icon" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cormorant:wght@500;600;700&family=Fira+Sans&family=Press+Start+2P&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cormorant:wght@500;600;700&family=Fira+Sans&family=Montserrat+Alternates&family=Press+Start+2P&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Rubik&family=Source+Sans+Pro&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 		<title>Курс VR</title>
 	</head>
 	<body>
 	<script src="script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 	<script type="text/javascript" src="script2.js"></script>
 		<header>
 			<div class="in-header">
 				<div class="course_name">
-					<h1>СИСТЕМЫ ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ</h1>
+					<h1>Системы вирутальной реальности</h1>
 				</div>
 			</div>
 		</header>
@@ -20,29 +23,51 @@
 			<div class="blanket-div"></div>
 			<div class="menu">
 				<form action="index.html">
-					<button class="menu-button">Главная</button>
+					<button class="menu-button">
+						<i class="arrow_right"></i>
+						<b>Главная</b>
+					</button>
 				</form>
 				<form action="chapter1.html">
-					<button class="menu-button">Раздел 1</button>
+					<button class="menu-button">
+						<i class="arrow_right"></i>
+						<b>Раздел 1</b>
+					</button>
 				</form>
 				<form action="chapter2.html">
-					<button class="menu-button">Раздел 2</button>
+					<button class="menu-button">
+						<i class="arrow_right"></i>
+						<b>Раздел 2</b>
+					</button>
 				</form>
 				<form action="chapter3.html">
-					<button class="menu-button">Раздел 3</button>
+					<button class="menu-button">
+						<i class="arrow_right"></i>
+						<b>Раздел 3</b>
+					</button>
 				</form>
 				<form action="chapter4.html">
-					<button class="menu-button">Раздел 4</button>
+					<button class="menu-button">
+						<i class="arrow_right"></i>
+						<b>Раздел 4</b>
+					</button>
 				</form>
 				<form action="chapter5.html">
-					<button class="menu-button">Раздел 5</button>
+					<button class="active">
+						<i class="arrow_down"></i>
+						<b>Раздел 5</b>
+						<div class="submenu">
+							<br><a class="anchor" href="#workunreal">Работа с UNREAL</a>
+						</div>
+					</button>
 				</form>
 			</div>
+			<div id="toTop">Наверх</div>
 			<div class="text1">
 				<div class="in-text">
+					<a name="workunreal"></a>
 					<h2>РАБОТА С UNREAL</h2>
-					<a href="javascript:collapsElement('id1')" title="" rel="nofollow">Показать/скрыть детальную информацию</a>
-					<div id="id1" style="display:none" >
+					<div id="id1">
 						<p class="text">
 						Пока ничего нет
 						</p>

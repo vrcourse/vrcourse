@@ -4,90 +4,80 @@
 		<meta charset="utf-8">
 		<link href='favicon.ico' rel="shortcut icon" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cormorant:wght@500;600;700&family=Fira+Sans&family=Press+Start+2P&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Cormorant:wght@500;600;700&family=Fira+Sans&family=Montserrat+Alternates&family=Press+Start+2P&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Rubik&family=Source+Sans+Pro&family=Ubuntu&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 		<title>Курс VR</title>
 	</head>
+	<header>
+		<div class="in-header">
+			<div class="course_name">
+				<h1>Системы вирутальной реальности</h1>
+			</div>
+		</div>
+	</header>
 	<body>
 	<script src="script.js"></script>
-		<header>
-			<div class="in-header">
-				<div class="course_name">
-					<h1>СИСТЕМЫ ВИРТУАЛЬНОЙ РЕАЛЬНОСТИ</h1>
-				</div>
-			</div>
-		</header>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 	<script type="text/javascript" src="script2.js"></script>
+		<div class="theme">
+			<img src="theme.jpg" alt="Фон" width="100%">
+		</div>
 		<div class="layout">
-			<div class="theme">
-				<img src="theme.jpg" alt="Фон" width="100%">
-			</div>
-			<br>
 			<div class="menu">
 				<form action="index.html">
-					<button class="menu-button">
+					<button class="active">
+						<i class="arrow_down"></i>
 						<b>Главная</b>
-						<br>Введение
-						<brГлоссарий
+						<div class="submenu">
+							<br>Введение
+							<br><a class="anchor" href="#dictionary">Глоссарий</a>
+						</div>
 					</button>
 				</form>
 				<form action="chapter1.html">
 					<button class="menu-button">
+						<i class="arrow_right"></i>
 						<b>Раздел 1</b>
-						<br>Компании-разработчики
-						<br>История ВР
-						<br>Области применения ВР
-						<br>Оборудование для ВР
-						<br>Виды ВР
-						<br>Интерактивное 3D
-						<br>Видео 360
 					</button>
 				</form>
 				<form action="chapter2.html">
 					<button class="menu-button">
+						<i class="arrow_right"></i>
 						<b>Раздел 2</b>
-						<br>Дополненная реальность
-						<br>Сравнение AR, VR и MR
-						<br>Инструментарий ARGIN
 					</button>
 				</form>
 				<form action="chapter3.html">
 					<button class="menu-button">
+						<i class="arrow_right"></i>
 						<b>Раздел 3</b>
-						<br>Интерактивная 3D-графика
-						<br>Средства для разработки
-						<br>Алгоритм создания веб-приложения
-						<br>Практическая работа
 					</button>
 				</form>
 				<form action="chapter4.html">
 					<button class="menu-button">
+						<i class="arrow_right"></i>
 						<b>Раздел 4</b>
-						<br>Основные понятия и принципы создания систем ВР
-						<br>Этапы и технологии создания систем ВР
-						<br>Структура и технологии
-						<br>Обзор 3D движков
-						<br>Сравнительный анализ UNITY 3D и UNREAL ENGINE
-						<br>Начало работы UNREAL ENGINE
 					</button>
 				</form>
 				<form action="chapter5.html">
 					<button class="menu-button">
+						<i class="arrow_right"></i>
 						<b>Раздел 5</b>
-						<br>Работа с UNREAL
 					</button>
 				</form>
 			</div>
+			<div id="toTop">Наверх</div>
 			<div class="text1">
 				<div class="in-text">
+					<a name="intoduction"></a>
 					<h2>ВВЕДЕНИЕ</h2>
-					<a href="javascript:collapsElement('id1')" title="" rel="nofollow">Показать/скрыть детальную информацию</a>
-					<div id="id1" style="display:none" >
+					<div id="id1">
 						<p class="text">
 						Технология виртуальной реальности (ВР) присутствует в той или иной форме уже несколько лет и медленно, 
 						но верно входит в систему образования. Будучи привлекательной современной технологией, виртуальная реальность 
 						изменила облик образования, став эффективным дополнением к традиционным методам обучения. Применение элементов 
 						виртуальной реальности будет расти в геометрической прогрессии. Согласно данным аналитического агентства KPMG 
 						за 2019 год, VR/AR-технологии уже используют в 21% крупнейших отечественных компаний 
-						<a href="https://vc.ru/future/99226-rynok-vr-ar-chto-bylo-v-2019-godu-i-chego-zhdat-ot-2020-go"  target="_blank">[источник]</a>. 
+						<a href="https://vc.ru/future/99226-rynok-vr-ar-chto-bylo-v-2019-godu-i-chego-zhdat-ot-2020-go" target="_blank">[источник]</a>. 
 						Таким образом, тема 
 						виртуальной реальности весьма актуальна.
 						</p>
@@ -107,6 +97,7 @@
 						платформ. Возрастающая вовлеченность порождает желание создать более качественное ПО и привлечь поддержку извне, 
 						т.к. создание ВР образовательных проектов – процесс дорогостоящий.
 						</p>
+						<a name="dictionary"></a>
 						<p class="text">
 						Курс посвящен важнейшим основам виртуальной реальности, которые послужат 
 						ценным фундаментом для начинающего специалиста, а также любого интересующегося этой темой.
@@ -116,8 +107,7 @@
 						</a>-->
 					</div>
 					<h2>ГЛОССАРИЙ</h2>
-					<a href="javascript:collapsElement('id2')" title="" rel="nofollow">Показать/скрыть детальную информацию</a>
-					<div id="id2" style="display:none" >
+					<div id="id2">
 						<dl>
 						<dt>Виртуальная реальность (Virtual reality)</dt>
 							<dd>Это некий иллюзорный мир, в который погружается и с которым взаимодействует человек-пользователь.</dd>
