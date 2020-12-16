@@ -7,13 +7,11 @@ body {
 }
 
 header {
-	position: fixed;
 	top: 0px;
 	background-color: rgb(69, 46, 137);
 	color: black;
 	width: 100%;
 	z-index: 5;
-	height: 10%;
 }
 
 .course_name {
@@ -37,17 +35,10 @@ header {
 
 .layout {
 	background-color: rgb(255, 255, 255);
-	height: 100%;
-}
-
-.blanket-div {
-	background-color: rgb(255, 255, 255);
-	margin-top: 5%;
 }
 
 .theme {
 	width: 100%;
-	height: 600px;
 	overflow: hidden;
 }
 
