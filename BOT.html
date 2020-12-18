@@ -31,43 +31,68 @@
 								<form action="" method="GET" class="hidden">
 									<select data-conv-question="Здравствуйте! Я бот поддержки сайта Системы виртуальной реальности. Могу вам составить компанию, хотите поговорить?" name="first-question">
 	                                    <option value="yes">Давай</option>
-	                                    <option value="sure">Конечно поболтаем!</option>
+	                                    <option value="sure">Конечно, поболтаем!</option>
 	                                </select>
 	                                <input type="text" name="name" data-conv-question="Тогда поехали! Сначала скажите Ваше имя, пожалуйста.| Хорошо! Как мне к Вам обращаться?">
-	                                <input type="text" data-conv-question="Здравствуйте, {name}:0! Выпьем за знакомство!" data-no-answer="true">
-	                                <input type="text" data-conv-question="Я попробую больше о Вас узнать, чтобы стать Вам электронным другом, давай начнем!" data-no-answer="true">
-	                                <select name="multi[]" data-conv-question="Что вы бы выпили сейчас, {name}:0?" multiple>
-	                                    <option value="Пиво">Пиво</option>
-	                                    <option value="Воды">Воды</option>
-										<option value="Лимонадика бы">Лимонадика бы</option>
-										<option value="Может что покрепче">Может что покрепче</option>
-	                                </select>
-	                                <select name="programmer" data-callback="storeState" data-conv-question="Итак, {name}:0! Вы опытный программист, смотрю! Много времени проводите за компом {name}:0!?">
-	                                    <option value="yes">24/7</option>
-	                                    <option value="no">7/24</option>
-	                                </select>
-	                                <div data-conv-fork="programmer">
-	                                    <div data-conv-case="yes">
-	                                        <input type="text" data-conv-question="Снимаю шляпу перед Вами!" data-no-answer="true">
+									<select name="hello" data-conv-question="Здравствуйте, {name}:0! Что бы вы хотели узнать?">
+	                                    <option value="cource" data-callback="rollback">О чем курс?</option>
+	                                    <option value="title">Содержание</option>
+										<option value="smaltalk">Просто поговорим</option>
+									</select>
+									<div data-conv-fork="hello">
+	                                    <div data-conv-case="cource">
+											<input type="text" data-conv-question="Курс посвящен важнейшим основам виртуальной реальности, которые послужат ценным фундаментом для начинающего специалиста, а также любого интересующегося этой темой." 
+											data-no-answer="true">
 	                                    </div>
-	                                    <div data-conv-case="no">
-		                                    <select name="thought" data-conv-question="Вы когда-нибудь думали оторваться от компа и увидеть солнечный свет?">
-		                                    	<option value="yes">Нет, наверное</option>
-		                                    	<option value="no">Да нет наверное</option>
+	                                    <div data-conv-case="title">
+		                                    <select name="menu" data-conv-question="Какой раздел предпочитаете?">
+												<option value="Раздел 1">Раздел 1</option>
+												<option value="Раздел 2">Раздел 2</option>
+												<option value="Раздел 3">Раздел 3</option>
+												<option value="Раздел 4">Раздел 4</option>
+												<option value="Раздел 5">Раздел 5</option>
+												<option value="Чат-бот">Чат-бот</option>
 		                                    </select>
-	                                    </div>
-	                                </div>
-	                                <input type="text" data-conv-question="Поздравляю, вы вступили в клуб по интересам, куда выслать бутылочку напитка?" data-no-answer="true">
-	                                <input data-conv-question="Напиши мне свой адрес, чтобы я мог отправить посылку, {name}:0!" required placeholder="What's your e-mail?">
-	                                <input data-conv-question="А теперь код домофона" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
+										</div>
+										<div data-conv-case="smaltalk">
+											<input type="text" data-conv-question="Я попробую больше о Вас узнать, чтобы стать Вам электронным другом, давай начнем!">
+											<select name="multi[]" data-conv-question="Что вы бы выпили сейчас, {name}:0?" multiple>
+												<option value="Пиво">Пиво</option>
+												<option value="Воды">Воды</option>
+												<option value="Лимонадика бы">Лимонадика бы</option>
+												<option value="Может что покрепче">Может что покрепче</option>
+											</select>
+											<select name="programmer" data-callback="storeState" data-conv-question="Итак, {name}:0! Вы опытный программист, смотрю! Много времени проводите за компом {name}:0!?">
+												<option value="yes">24/7</option>
+												<option value="no">7/24</option>
+											</select>
+											<div data-conv-fork="programmer">
+												<div data-conv-case="yes">
+													<input type="text" data-conv-question="Снимаю шляпу перед Вами!">
+												</div>
+												<div data-conv-case="no">
+													<select name="thought" data-conv-question="Вы когда-нибудь думали оторваться от компа и увидеть солнечный свет?">
+														<option value="yes">Нет, наверное</option>
+														<option value="no">Да нет наверное</option>
+													</select>
+												</div>
+											</div>
+											<input type="text" data-conv-question="Поздравляю, вы вступили в клуб по интересам, куда выслать бутылочку напитка?">
+											<input data-conv-question="Напиши мне свой адрес, чтобы я мог отправить посылку, {name}:0!" required placeholder="What's your e-mail?">
+											<input data-conv-question="А теперь код домофона" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
 
-	                                <select name="callbackTest" data-conv-question="Ну все, мы договорились, хочу только спросить, друзей захватить?">
-	                                    <option value="yes" data-callback="rollback">Конечно</option>
-	                                    <option value="no" data-callback="restore">Конечно да!</option>
-	                                </select>
-	                                <select data-conv-question="Все, я собрал чемоданы и отложил захват мира на пару дней, уже лечу!" id="">
-	                                    <option value="">Превосходно!</option>
-	                                </select>
+											<select name="callbackTest" data-conv-question="Ну все, мы договорились, хочу только спросить, друзей захватить?">
+												<option value="yes" data-callback="rollback">Конечно</option>
+												<option value="no" data-callback="restore">Конечно да!</option>
+											</select>
+											<select data-conv-question="Все, я собрал чемоданы и отложил захват мира на пару дней, уже лечу!" id="">
+												<option value="">Превосходно!</option>
+											</select>
+										</div>
+									</div>
+									<input type="text" data-conv-question="mau!">
+
+	                                
 								</form>
 							</div>
 						</div>
