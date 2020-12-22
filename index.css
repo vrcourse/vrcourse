@@ -150,13 +150,13 @@ a:hover {
 
 #toTop {
 	width: 100px;
-	border: 1px solid #a6d276;
-	background: #a6d276;
+	border: 1px solid #272c3c;
+	background: #272c3c;
 	text-align: center;
 	padding: 15px;
 	position: fixed;
-	bottom: 100px;
-	left: 50px;
+	bottom: 13%;
+	left: 7%;
 	cursor: pointer;
 	display: none;
 	color: white;
