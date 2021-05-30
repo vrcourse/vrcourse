@@ -165,3 +165,7 @@ a:hover {
 	border-radius: 10px;
 }
 
+.code {
+	background: rgba(255, 255, 128, .5);;
+}
+
