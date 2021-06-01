@@ -81,15 +81,97 @@
 					<h2>РАБОТА С UNREAL</h2>
 					<div id="id1">
 						<p class="text">
-						Пока ничего нет
+						<a href="https://docs.unrealengine.com/en-US/SharingAndReleasing/XRDevelopment/AR/HandheldAR/ARQuickStart/index.html" target="_blank">Быстрый старт</a>
+						</p>
+						<p class="text">
+						Unreal Engine — игровой движок, разрабатываемый и поддерживаемый компанией Epic Games. Первой игрой на этом движке был шутер от первого лица Unreal, выпущенный в 1998 году. Хотя движок первоначально был предназначен для разработки шутеров от первого лица, его последующие версии успешно применялись в играх самых различных жанров, в том числе стелс-играх, файтингах и массовых многопользовательских ролевых онлайн-играх. В прошлом движок распространялся на условиях оплаты ежемесячной подписки; с 2015 года Unreal Engine бесплатен, но разработчики использующих его приложений обязаны перечислять 5% роялти от общемирового дохода с некоторыми условиями.
+						</p>
+						<p class="text">
+						<b>Основные требования</b>
+						<br><b>Android:</b>
+						<br>1. Unreal Engine 4.23 or greater installed.
+						<br>2. Codeworks for Android installed.
+						<br><a href="https://developer.nvidia.com/gameworksdownload#?dn=codeworks-for-android-1r8)" target="_blank">
+							https://developer.nvidia.com/gameworksdownload#?dn=codeworks-for-android-1r8)</a>
+						<br><a href="https://developer.android.com/ndk/downloads" target="_blank">https://developer.android.com/ndk/downloads</a>
+						r21 to NDK r23 (NDK r21b recommended)
+						<br>3. Android Version 26 or greater installed. (Android 8.0)
+						<br><b>iOS:</b>
+						<br>1. Unreal Engine 4.23.1 or greater installed.
+						<br>2. Xcode 11 or greater installed.
+						</p>
+						ARKit 3.0 is only supported on devices with iOS 13, A12/A12X Bionic chips (or later), the Apple Neural Engine (ANE), and a TrueDepth Camera, such as the iPhone XS, iPhone XS Max, iPhone XR, and the 11-inch and 12.9-inch 2018 iPad Pros.
+						</p>
+						<h3>Начало работы</h3>
+						<p class="text">
+						1. Скачиваем Epic Games client с <a href="https://www.epicgames.com/store/en-US/" target="_blank">https://www.epicgames.com/store/en-US/</a>.
+						<a href="https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Win32/EpicInstaller-12.1.1.msi?launcherfilename=EpicInstaller-12.1.1.msi" target="_blank">Прямая ссылка</a>
+						</p>
+						<p class="text">
+						2. Регистрируемся в нем и попадаем внутрь
+						</p>
+						<p class="text">
+						3. Устанавливаем сам unreal engine
+						<p style="text-align: center;"><img src="unen.png" alt="" width="70%"></p>
+						</p>
+						<p class="text">
+						При установке важно включить Шаблоны
+						</p>
+						<p style="text-align: center;"><img src="unen1.png" alt="" width="70%"></p>
+						<p class="text">
+						4. Устанавливаем CodeWorks с дополнительными sdk
+						<br>Либо самостоятельно сам codeworks + android-ndk-r21e + android-sdk platform android-29
+						<br>Либо архивом по <a href="https://drive.google.com/file/d/1aEZyCXcUdG9BpAtzgVM25qskjXT7RI0b/view?usp=sharing" target="_blank">ссылке</a>.
+						</p>
+						<h3>Создаем проект</h3>
+						<p class="text">
+						Создаем проект
+						</p>
+						<p style="text-align: center;"><img src="5.1.png" alt="" width="70%"></p>
+						<p class="text">
+						Если в списке пусто, то надо в настройках установки включить шаблоны
+						</p>
+						<p style="text-align: center;"><img src="5.2.png" alt="" width="70%"></p>
+						<p class="text">
+						Выбираем Handheld AR
+						</p>
+						<p style="text-align: center;"><img src="5.3.png" alt="" width="70%"></p>
+						<p class="text">
+						Выбираем параметры как на скриншоте
+						</p>
+						<p style="text-align: center;"><img src="5.4.png" alt="" width="70%"></p>
+						<p class="text">
+						После создания проекта у нас должно открыться такое окно:
+						</p>
+						<p style="text-align: center;"><img src="5.5.png" alt="" width="70%"></p>
+						<p class="text">
+						Открываем настройки проекта
+						</p>
+						<p style="text-align: center;"><img src="5.6.png" alt="" width="70%"></p>
+						<p class="text">
+						Листаем в меню навигации до android и меняем minimum и target SDK version, нажимаем Configure Now и принимаем лицензионное соглашение
+						</p>
+						<p style="text-align: center;"><img src="5.7.png" alt="" width="70%"></p>
+						<p class="text">
+						В разделе Android SDK меняем путь на те файлы, которые я передавал вам в письме в архиве
+						</p>
+						<p style="text-align: center;"><img src="5.8.png" alt="" width="70%"></p>
+						<p class="text">
+						Включаем телефон в режим отладки
+						</p>
+						<p style="text-align: center;"><img src="5.9.png" alt="" width="70%"></p>
+						<p class="text">
+						Нажимаем Launch и выбираем из списка наш телефон
+						</p>
+						<p style="text-align: center;"><img src="5.10.png" alt="" width="70%"></p>
+						<p class="text">
+						После чего ждем и подтверждаем установку на телефоне
+						</p>
+						<p style="text-align: center;"><img src="5.11.png" alt="" width="70%"></p>
+						<p class="text">
+						Готово!
 						</p>
 					</div>
-
-					<br>
-					<h2></h2>
-					<p>
-					
-					</p>
 					<br>
 				</div>
 			</div>
