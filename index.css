@@ -176,14 +176,13 @@ a:hover {
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltiptext {
     visibility: hidden;
     background-color: #272c3c;
     color: #fff;
     text-align: center;
     padding: 5px 5px;
     border-radius: 6px;
-    /* Position the tooltip text - see examples below! */
 	width: 200px;
     top: 100%;
     left: 50%;
