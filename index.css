@@ -130,6 +130,16 @@ button:active {
   -webkit-transform: rotate(45deg);
 }
 
+.arrow_up {
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 3px;
+	margin-bottom: 2px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-135deg);
+  }
+
 .text {
 	text-indent: 25px;
 	text-align: justify;
@@ -149,11 +159,12 @@ a:hover {
 }
 
 #toTop {
-	width: 100px;
+	width: 60px;
 	border: 1px solid #272c3c;
 	background: #272c3c;
+	opacity: 0.9;
 	text-align: center;
-	padding: 15px;
+	padding: 5px;
 	position: fixed;
 	bottom: 13%;
 	left: 7%;
@@ -163,6 +174,28 @@ a:hover {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 18px;
 	border-radius: 10px;
+}
+
+.arrow-top-5 {
+    margin: 0px 8px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    fill: #337AB7; 
+    transition: fill 0.5s ease-out, transform 0.3s ease-in;    
+}
+
+.arrow-top-5 {
+    transform: rotate(180deg);
+}
+
+.arrow-top-5:hover {
+    fill: #BFE2FF;
+    transform: scale(1.2);
+}
+
+.arrow-top-5:hover {
+    transform: rotate(180deg) scale(1.2);
 }
 
 .code {
@@ -227,3 +260,4 @@ a:hover {
 .sources {
 	font-size: small;
 }
+
